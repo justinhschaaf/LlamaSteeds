@@ -1,16 +1,32 @@
-# Fabric Example Mod
+# Llama Steeds
 
-## Setup
+![Icon](https://github.com/justinhschaaf/LlamaSteeds/blob/master/docs/ICON.png)
 
-1. Edit build.gradle and mod.json to suit your needs.
-    * The "mixins" object can be removed from mod.json if you do not need to use mixins.
-    * Please replace all occurences of "modid" with your own mod ID - sometimes, a different string may also suffice.
-2. Run the following command:
+*Mount your llama and ride into the sunset.*
 
-```
-./gradlew idea
-```
+Have you dreampt of riding a llama? Well now you can! With this astonishingly simple mod, you can saddle your llama and ride it as if it were a horse.
 
-## License
+## Ride a Llama in 3 Easy Steps:
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+### 1. Tame Your Llama
+
+![A good llama](https://github.com/justinhschaaf/LlamaSteeds/blob/master/docs/README_1.png)
+
+### 2. Place A Saddle On Your Llama
+
+![Saddled llama](https://github.com/justinhschaaf/LlamaSteeds/blob/master/docs/README_2.png)
+
+### 3. Ride Off Into The Sunset
+
+![Ridden llama](https://github.com/justinhschaaf/LlamaSteeds/blob/master/docs/README_3.png)
+
+*(I have no idea what else to say except that you should get this mod)*
+
+## Where Can I Get This Masterpiece?
+
+- [GitHub Releases](https://github.com/justinhschaaf/LlamaSteeds/releases)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/llama-steeds)
+
+## Modpacks
+
+Please [read the license](https://github.com/justinhschaaf/LlamaSteeds/blob/master/LICENSE)
