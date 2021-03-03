@@ -1,0 +1,9 @@
+{
+    "required": true,
+    "package": "com.justinschaaf.llamasteeds.forge.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": ["LlamaEntityMixin"],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

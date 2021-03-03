@@ -7,10 +7,6 @@
 
 Have you dreampt of riding a llama? Well now you can! With this astonishingly simple mod, you can saddle your llama and ride it as if it were a horse.
 
-### Now with more nether! (1.16 update)
-
-![Nether Llama](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/NETHER.png)
-
 ## Ride a Llama in 3 Easy Steps:
 
 ### 1. Tame Your Llama
