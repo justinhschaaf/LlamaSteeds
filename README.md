@@ -1,7 +1,7 @@
 ![Icon](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/ICON_TEXT.png)
 
-![Downloads](https://cf.way2muchnoise.eu/llama-steeds.svg?badge_style=for_the_badge)
-![Versions](https://cf.way2muchnoise.eu/versions/llama-steeds.svg?badge_style=for_the_badge)
+![Downloads](https://cf.way2muchnoise.eu/llama-steeds-forge.svg?badge_style=for_the_badge)
+![Versions](https://cf.way2muchnoise.eu/versions/llama-steeds-forge.svg?badge_style=for_the_badge)
 
 *Mount your llama and ride into the sunset.*
 
@@ -26,7 +26,7 @@ Have you dreampt of riding a llama? Well now you can! With this astonishingly si
 ## Where Can I Get This Masterpiece?
 
 - [GitHub Releases](https://github.com/justinhschaaf/LlamaSteeds/releases)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/llama-steeds)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/llama-steeds-forge)
 
 ## Modpacks
 
