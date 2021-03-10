@@ -15,7 +15,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '2021.03.08'
+version = '2021.03.09'
 group = 'com.justinschaaf.llamasteeds.forge'
 archivesBaseName = 'llamasteeds-forge'
 
@@ -38,7 +38,7 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
-            arg "-mixin.config=llamasteeds.mixins.json"
+            arg "-mixin.config=mixins.llamasteeds.json"
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
@@ -55,7 +55,7 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
-            arg "-mixin.config=llamasteeds.mixins.json"
+            arg "-mixin.config=mixins.llamasteeds.json"
 
             // Recommended logging data for a userdev environment
             property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
@@ -90,9 +90,9 @@ minecraft {
     }
 }
 
-mixin {
-    add sourceSets.main, "llamasteeds.mixins.json"
-}
+/*mixin {
+    add sourceSets.main, "mixins.llamasteeds.json"
+}*/
 
 dependencies {
 
@@ -124,7 +124,7 @@ jar {
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
             "TweakClass": "org.spongepowered.asm.launch.MixinTweaker",
             "TweakOrder": 0,
-            "MixinConfigs": "llamasteeds.mixins.json"
+            "MixinConfigs": "mixins.llamasteeds.json"
         ])
     }
 
