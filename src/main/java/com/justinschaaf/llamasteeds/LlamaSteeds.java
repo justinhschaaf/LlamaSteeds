@@ -1,11 +1,11 @@
 package com.justinschaaf.llamasteeds;
 
-import net.minecraft.entity.passive.LlamaEntity;
+import net.minecraft.entity.passive.EntityChicken;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
-@Mixin(LlamaEntity.class)
-public class LlamaSteeds {
+@Mixin(EntityChicken.class)
+public class chickenSteeds {
 
     /**
      * I mount my steed...
