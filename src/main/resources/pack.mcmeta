@@ -1,7 +1,7 @@
 {
     "pack": {
         "description": "LlamaSteeds Resources",
-        "pack_format": 5,
+        "pack_format": 7,
         "_comment": "There are no resources, but it's required by Forge!"
     }
 }
