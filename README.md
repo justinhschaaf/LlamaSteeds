@@ -1,15 +1,15 @@
 ![Icon](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/ICON_TEXT.png)
 
-![Downloads](https://cf.way2muchnoise.eu/llama-steeds.svg?badge_style=for_the_badge)
-![Versions](https://cf.way2muchnoise.eu/versions/llama-steeds.svg?badge_style=for_the_badge)
+[![Downloads](https://cf.way2muchnoise.eu/llama-steeds.svg?badge_style=for_the_badge)
+![Versions](https://cf.way2muchnoise.eu/versions/llama-steeds.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/llama-steeds)
 
 *Mount your llama and ride into the sunset.*
 
 Have you dreampt of riding a llama? Well now you can! With this astonishingly simple mod, you can saddle your llama and ride it as if it were a horse.
 
-### Now with more nether! (1.16 update)
+### Now with more nature! (1.19 update)
 
-![Nether Llama](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/NETHER.png)
+![Wild Llama](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/WILD.png)
 
 ## Ride a Llama in 3 Easy Steps:
 
