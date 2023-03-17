@@ -13,7 +13,7 @@ public class LlamaSteeds {
      * I mount my steed...
      *
      * @note Gradle wants docs before it builds the jar for...some reason?
-     * @return Whether or not the llama can be saddled
+     * @return Whether the llama can be saddled
      * @reason So llamas can be controlled
      * @author justinhschaaf
      */
@@ -33,7 +33,7 @@ public class LlamaSteeds {
      * @author justinhschaaf
      */
     @Overwrite
-    public LivingEntity getPrimaryPassenger() {
+    public LivingEntity getControllingPassenger() {
 
         // It would have been so much more convenient if this worked
         // --but no, since you can't, I will write out my own version as you wish, Mixin Gods
