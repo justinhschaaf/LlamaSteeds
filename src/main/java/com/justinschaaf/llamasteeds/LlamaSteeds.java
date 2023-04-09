@@ -1,57 +1,49 @@
 package com.justinschaaf.llamasteeds;
 
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.passive.LlamaEntity;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.gamerule.v1.GameRuleFactory;
+import net.fabricmc.fabric.api.gamerule.v1.GameRuleRegistry;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.world.GameRules;
 
-@Mixin(LlamaEntity.class)
-public class LlamaSteeds {
+public class LlamaSteeds implements ModInitializer {
 
     /**
-     * I mount my steed...
-     *
-     * @note Gradle wants docs before it builds the jar for...some reason?
-     * @return Whether the llama can be saddled
-     * @reason So llamas can be controlled
-     * @author justinhschaaf
+     * The {@link GameRules.Key} for setting the max llama caravan length.
+     * This is private to prevent it from easily being set externally since it
+     * isn't final like the Fabric docs recommends.
      */
-    @Overwrite
-    public boolean canBeSaddled() {
-        return true;
+    private static GameRules.Key<GameRules.IntRule> maxCaravanLengthRule = null;
+
+    /**
+     * Runs upon the mod being initialized. We only use it for registering the
+     * {@link #maxCaravanLengthRule} if and only if Fabric API is present.
+     */
+    @Override
+    public void onInitialize() {
+        if (isFabricApiLoaded()) {
+            maxCaravanLengthRule = GameRuleRegistry.register(
+                    "maxLlamaCaravanLength",
+                    GameRules.Category.MOBS,
+                    GameRuleFactory.createIntRule(10, 2)
+            );
+        }
     }
 
     /**
-     * ...and I set forth on my journey
-     *
-     * @note The "canBeControlledByRider" method was removed in 1.19. This
-     *      replaces it going forward.
-     * @return The llama's rider. This is overriden by the LlamaEntity class to
-     *      return null, I'm guessing so there is no primary passenger to
-     *      control the llama. Not anymore!
-     * @author justinhschaaf
+     * Gets the {@link GameRules.Key} object for the max llama caravan length
+     * @return The Gamerule Key, or null if Fabric API isn't present
      */
-    @Overwrite
-    public LivingEntity getControllingPassenger() {
+    public static GameRules.Key<GameRules.IntRule> getMaxCaravanLengthRule() {
+        return maxCaravanLengthRule;
+    }
 
-        // It would have been so much more convenient if this worked
-        // --but no, since you can't, I will write out my own version as you wish, Mixin Gods
-        //return ((AbstractDonkeyEntity) (Object) super).getPrimaryPassenger();
-
-        LlamaEntity llama = (LlamaEntity) (Object) this;
-
-        if (llama.isSaddled()) {
-
-            Entity rider = llama.getFirstPassenger();
-
-            if (rider instanceof LivingEntity)
-                return (LivingEntity) rider;
-
-        }
-
-        return null;
-
+    /**
+     * Utility method to check whether Fabric API is present
+     * @return true if "fabric-api" is loaded
+     */
+    public static boolean isFabricApiLoaded() {
+        return FabricLoader.getInstance().isModLoaded("fabric-api");
     }
 
 }

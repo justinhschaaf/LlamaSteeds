@@ -27,10 +27,18 @@ Have you dreampt of riding a llama? Well now you can! With this astonishingly si
 
 *(I have no idea what else to say except that you should get this mod)*
 
+## Extras
+
+![XL Caravan](https://github.com/justinhschaaf/LlamaSteeds/raw/master/docs/CARAVAN.png)
+
+- Llamas will form caravans behind the llama you ride.
+- If Fabric API is present, adds the `maxLlamaCaravanLength` gamerule, which defines how long a caravan can be.
+
 ## Where Can I Get This Masterpiece?
 
-- [GitHub Releases](https://github.com/justinhschaaf/LlamaSteeds/releases)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/llama-steeds)
+- [GitHub Releases](https://github.com/justinhschaaf/LlamaSteeds/releases)
+- [Modrinth](https://modrinth.com/mod/llama-steeds)
 
 ## Modpacks
 

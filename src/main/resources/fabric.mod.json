@@ -18,7 +18,9 @@
 
 	"environment": "*",
 	"entrypoints": {
-		"main": []
+		"main": [
+			"com.justinschaaf.llamasteeds.LlamaSteeds"
+		]
 	},
 	"mixins": [
 		"llamasteeds.mixins.json"
@@ -27,5 +29,7 @@
 	"depends": {
 		"fabricloader": ">=0.14.17"
 	},
-	"suggests": {}
+	"suggests": {
+		"fabric-api": "*"
+	}
 }
