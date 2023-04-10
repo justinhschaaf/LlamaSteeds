@@ -7,13 +7,13 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 
 @Mixin(Llama.class)
-public class LlamaEntityMixin {
+public class LlamaMixin {
 
     /**
      * I mount my steed...
      *
      * @note Now Forge wants javadocs too
-     * @return Whether or not the llama can be saddled
+     * @return Whether the llama can be saddled
      * @reason So llamas can be controlled
      * @author justinhschaaf
      */
@@ -28,7 +28,8 @@ public class LlamaEntityMixin {
      * @note The "canBeControlledByRider" method was removed in 1.19. This
      *      replaces it going forward.
      * @return Tells steering controls there is an entity on the llama that can
-     *      control it instead of the Llama class lying sayind there's nobody.
+     *      control it instead of the Llama class lying saying there's nobody.
+     * @reason So llamas can be controlled
      * @author justinhschaaf
      */
     @Overwrite

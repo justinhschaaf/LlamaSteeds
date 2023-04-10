@@ -2,7 +2,10 @@
     "required": true,
     "package": "com.justinschaaf.llamasteeds.forge.mixin",
     "compatibilityLevel": "JAVA_17",
-    "mixins": ["LlamaEntityMixin"],
+    "mixins": [
+        "LlamaMixin",
+        "CaravanMixin"
+    ],
     "injectors": {
         "defaultRequire": 1
     },
