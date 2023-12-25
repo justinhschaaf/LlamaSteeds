@@ -47,7 +47,7 @@ public class CaravanMixin {
      */
     @ModifyConstant(method = "firstIsLeashed", constant = @Constant(intValue = 8))
     private int modifyCaravanLength(int length, Llama e) {
-        return Math.max(e.getLevel().getGameRules().getInt(LlamaSteeds.MAX_CARAVAN_LENGTH_RULE) - 2, 0);
+        return Math.max(e.level().getGameRules().getInt(LlamaSteeds.MAX_CARAVAN_LENGTH_RULE) - 2, 0);
     }
 
 }
