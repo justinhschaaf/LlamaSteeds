@@ -1,17 +1,27 @@
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
 modLoader = "javafml"
+
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 loaderVersion = "[4,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+
+# The license for your mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+license = "zlib"
+
+issueTrackerURL="https://github.com/justinhschaaf/LlamaSteeds/issues" #optional
 
 [[mods]]
 modId = "llamasteeds"
 version = "${version}"
 displayName = "Llama Steeds"
-authors = "Me!"
+displayURL="https://justinschaaf.com/projects/llama_steeds" #optional
+authors = "justinhschaaf" #optional
+credits="You, dear user, for actually using it!" #optional
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Mount your llama and ride into the sunset.
 '''
-#logoFile = ""
+
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile = "assets/llamasteeds/icon.png" #optional
 
 [[dependencies.llamasteeds]]
 modId = "neoforge"

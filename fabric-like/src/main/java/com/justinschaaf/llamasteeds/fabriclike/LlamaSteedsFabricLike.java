@@ -1,10 +1,12 @@
 package com.justinschaaf.llamasteeds.fabriclike;
 
-import com.justinschaaf.llamasteeds.ExampleMod;
+import com.justinschaaf.llamasteeds.LlamaSteeds;
 
-public final class ExampleModFabricLike {
+public final class LlamaSteedsFabricLike {
+
     public static void init() {
         // Run our common setup.
-        ExampleMod.init();
+        LlamaSteeds.init();
     }
+
 }

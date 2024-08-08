@@ -1,13 +1,15 @@
 {
-  "required": true,
-  "package": "com.justinschaaf.llamasteeds.mixin",
-  "compatibilityLevel": "JAVA_21",
-  "minVersion": "0.8",
-  "client": [
-  ],
-  "mixins": [
-  ],
-  "injectors": {
-    "defaultRequire": 1
-  }
+    "required": true,
+    "package": "com.justinschaaf.llamasteeds.mixins",
+    "compatibilityLevel": "JAVA_21",
+    "minVersion": "0.8",
+    "mixins": [
+        "LlamaMixin",
+        "CaravanMixin",
+        "GameRulesInvoker",
+        "GameRulesIntegerValueInvoker"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
 }

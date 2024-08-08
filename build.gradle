@@ -61,10 +61,11 @@ subprojects {
         targetCompatibility = JavaVersion.VERSION_21
     }
 
-    jar {
-        from "LICENSE.md"
-        from "README.md"
-    }
+    // This doesn't actually work and idfk how to make it work
+    /*jar {
+        from file("README.md")
+        from file("LICENSE.md")
+    }*/
 
     tasks.withType(JavaCompile).configureEach {
         it.options.release = 21

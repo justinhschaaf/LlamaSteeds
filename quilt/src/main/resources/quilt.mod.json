@@ -1,39 +1,41 @@
 {
-  "schema_version": 1,
-  "quilt_loader": {
-    "group": "${group}",
-    "id": "llamasteeds",
-    "version": "${version}",
-    "metadata": {
-      "name": "Llama Steeds",
-      "description": "This is an example description! Tell everyone what your mod is about!",
-      "contributors": {
-        "Me!": "Author"
-      },
-      "icon": "assets/llamasteeds/icon.png"
+    "schema_version": 1,
+    "quilt_loader": {
+        "group": "${group}",
+        "id": "llamasteeds",
+        "version": "${version}",
+        "metadata": {
+            "name": "Llama Steeds",
+            "description": "Mount your llama and ride into the sunset.",
+            "contributors": {
+                "justinhschaaf": "Author"
+            },
+            "contact": {
+                "homepage": "https://justinschaaf.com/projects/llama_steeds",
+                "issues": "https://github.com/justinhschaaf/LlamaSteeds/issues",
+                "sources": "https://github.com/justinhschaaf/llamasteeds"
+            },
+            "license": "Zlib",
+            "icon": "assets/llamasteeds/icon.png"
+        },
+        "intermediate_mappings": "net.fabricmc:intermediary",
+        "entrypoints": {
+            "init": [
+                "com.justinschaaf.llamasteeds.quilt.LlamaSteedsQuilt"
+            ]
+        },
+        "depends": [
+            {
+                "id": "quilt_loader",
+                "version": "*"
+            },
+            {
+                "id": "minecraft",
+                "version": ">=1.21"
+            }
+        ]
     },
-    "intermediate_mappings": "net.fabricmc:intermediary",
-    "entrypoints": {
-      "init": [
-        "com.justinschaaf.llamasteeds.quilt.ExampleModQuilt"
-      ]
-    },
-    "depends": [
-      {
-        "id": "quilt_loader",
-        "version": "*"
-      },
-      {
-        "id": "quilt_base",
-        "version": "*"
-      },
-      {
-        "id": "minecraft",
-        "version": ">=1.21"
-      }
+    "mixin": [
+        "llamasteeds.mixins.json"
     ]
-  },
-  "mixin": [
-    "llamasteeds.mixins.json"
-  ]
 }
