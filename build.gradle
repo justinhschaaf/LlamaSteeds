@@ -1,7 +1,7 @@
 plugins {
-    id 'dev.architectury.loom' version '1.6-SNAPSHOT' apply false
-    id 'architectury-plugin' version '3.4-SNAPSHOT'
-    id 'com.github.johnrengelman.shadow' version '8.1.1' apply false
+    id "dev.architectury.loom" version "${architectury_loom_version}" apply false
+    id "architectury-plugin" version "${architectury_plugin_version}"
+    id "com.gradleup.shadow" version "${shadow_version}" apply false
 }
 
 architectury {
