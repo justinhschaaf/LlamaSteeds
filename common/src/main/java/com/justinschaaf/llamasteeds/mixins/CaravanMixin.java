@@ -2,7 +2,7 @@ package com.justinschaaf.llamasteeds.mixins;
 
 import com.justinschaaf.llamasteeds.LlamaSteeds;
 import net.minecraft.world.entity.ai.goal.LlamaFollowCaravanGoal;
-import net.minecraft.world.entity.animal.horse.Llama;
+import net.minecraft.world.entity.animal.equine.Llama;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Constant;
@@ -23,7 +23,7 @@ public class CaravanMixin {
      * @return true if the llama is leashed or being controlled
      * @author justinhschaaf
      */
-    @Redirect(method = { "canUse()Z", "firstIsLeashed" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/animal/horse/Llama;isLeashed()Z"))
+    @Redirect(method = { "canUse()Z", "firstIsLeashed" }, at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/animal/equine/Llama;isLeashed()Z"))
     private boolean isLeashedOrControlled(Llama e) {
         return e.isLeashed() || e.hasControllingPassenger();
     }
