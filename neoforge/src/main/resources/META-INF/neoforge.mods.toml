@@ -26,14 +26,14 @@ logoFile = "assets/llamasteeds/icon.png" #optional
 [[dependencies.llamasteeds]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.0,)"
+versionRange = "[26.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.llamasteeds]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.11,)"
+versionRange = "[26.1,)"
 ordering = "NONE"
 side = "BOTH"
 

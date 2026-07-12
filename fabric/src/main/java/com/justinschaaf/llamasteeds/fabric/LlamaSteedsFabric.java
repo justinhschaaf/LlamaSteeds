@@ -1,6 +1,6 @@
 package com.justinschaaf.llamasteeds.fabric;
 
-import com.justinschaaf.llamasteeds.fabriclike.LlamaSteedsFabricLike;
+import com.justinschaaf.llamasteeds.LlamaSteeds;
 import net.fabricmc.api.ModInitializer;
 
 public final class LlamaSteedsFabric implements ModInitializer {
@@ -11,8 +11,8 @@ public final class LlamaSteedsFabric implements ModInitializer {
         // However, some things (like resources) may still be uninitialized.
         // Proceed with mild caution.
 
-        // Run the Fabric-like setup.
-        LlamaSteedsFabricLike.init();
+        // Run the common setup.
+        LlamaSteeds.init();
     }
 
 }
