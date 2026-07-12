@@ -11,6 +11,4 @@ rootProject.name = 'llamasteeds'
 
 include 'common'
 include 'fabric'
-include 'fabric-like'
 include 'neoforge'
-include 'quilt'
