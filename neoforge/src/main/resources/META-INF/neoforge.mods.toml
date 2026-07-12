@@ -33,7 +33,7 @@ side = "BOTH"
 [[dependencies.llamasteeds]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.9,)"
+versionRange = "[1.21.11,)"
 ordering = "NONE"
 side = "BOTH"
 

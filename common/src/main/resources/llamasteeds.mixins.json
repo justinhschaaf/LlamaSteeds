@@ -5,8 +5,7 @@
     "minVersion": "0.8",
     "mixins": [
         "CaravanMixin",
-        "GameRulesInvoker",
-        "GameRulesIntegerValueInvoker"
+        "GameRulesInvoker"
     ],
     "injectors": {
         "defaultRequire": 1
