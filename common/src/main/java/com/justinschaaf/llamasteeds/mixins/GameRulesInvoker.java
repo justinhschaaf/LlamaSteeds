@@ -1,17 +1,20 @@
 package com.justinschaaf.llamasteeds.mixins;
 
-import net.minecraft.world.level.GameRules;
+import net.minecraft.world.level.gamerules.GameRule;
+import net.minecraft.world.level.gamerules.GameRuleCategory;
+import net.minecraft.world.level.gamerules.GameRules;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(GameRules.class)
 public interface GameRulesInvoker {
 
-    @Invoker("register")
-    static <T extends GameRules.Value<T>> GameRules.Key<T> register(
+    @Invoker("registerInteger")
+    static GameRule<Integer> registerInteger(
             String name,
-            GameRules.Category category,
-            GameRules.Type<T> type) {
+            GameRuleCategory category,
+            int defaultValue,
+            int minValue) {
         throw new AssertionError();
     }
 

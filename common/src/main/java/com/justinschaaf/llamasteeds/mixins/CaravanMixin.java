@@ -1,6 +1,7 @@
 package com.justinschaaf.llamasteeds.mixins;
 
 import com.justinschaaf.llamasteeds.LlamaSteeds;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.ai.goal.LlamaFollowCaravanGoal;
 import net.minecraft.world.entity.animal.equine.Llama;
 import org.spongepowered.asm.mixin.Mixin;
@@ -29,7 +30,7 @@ public class CaravanMixin {
     }
 
     /**
-     * This mixin implements the {@link LlamaSteeds#MAX_CARAVAN_LENGTH_RULE}
+     * This mixin implements the {@link LlamaSteeds#getMaxCaravanLengthRule()}
      * gamerule. In the {@link LlamaFollowCaravanGoal#firstIsLeashed(Llama, int)}
      * method, the game denies any new llamas from joining a caravan if there
      * are already 8 followers behind the caravan leader and the first follower.
@@ -44,7 +45,11 @@ public class CaravanMixin {
      */
     @ModifyConstant(method = "firstIsLeashed", constant = @Constant(intValue = 8))
     private int modifyCaravanLength(int length, Llama e) {
-        return Math.max(e.level().getServer().getGameRules().getInt(LlamaSteeds.MAX_CARAVAN_LENGTH_RULE) - 2, 0);
+        if (e.level() instanceof ServerLevel) {
+            return Math.max(((ServerLevel) e.level()).getGameRules().get(LlamaSteeds.getMaxCaravanLengthRule()) - 2, 0);
+        }
+
+        return 8; // default value
     }
 
 }
