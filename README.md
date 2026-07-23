@@ -48,5 +48,5 @@ Please [read the license](https://github.com/justinhschaaf/LlamaSteeds/blob/main
 
 You're in luck, as LLAMA STEEDS: THE DATA PACK is here! Get it at:
 
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/llama-steeds-datapack)
-- [Modrinth](https://modrinth.com/mod/llama-steeds-datapack)
+- [CurseForge](https://www.curseforge.com/minecraft/data-packs/llama-steeds-datapack)
+- [Modrinth](https://modrinth.com/datapack/llama-steeds-datapack)
